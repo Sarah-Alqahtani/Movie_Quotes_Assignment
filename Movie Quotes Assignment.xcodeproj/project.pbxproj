@@ -14,6 +14,10 @@
 		8410E76A27727499003FB52F /* Movie_Quotes_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8410E76827727499003FB52F /* Movie_Quotes_Assignment.xcdatamodeld */; };
 		8410E76C2772749A003FB52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8410E76B2772749A003FB52F /* Assets.xcassets */; };
 		8410E76F2772749A003FB52F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410E76D2772749A003FB52F /* LaunchScreen.storyboard */; };
+		8410E79A27731902003FB52F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410E79927731902003FB52F /* CollectionViewCell.swift */; };
+		84E69C682776206000E4807E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 84E69C672776206000E4807E /* Kingfisher */; };
+		84E69C6A277626E100E4807E /* QuoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E69C69277626E100E4807E /* QuoteScreen.swift */; };
+		A02EEBA8E8B5712D87C6BB0E /* Pods_Movie_Quotes_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB48CABAF4AA6A94EF1AF46F /* Pods_Movie_Quotes_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		8410E76B2772749A003FB52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8410E76E2772749A003FB52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8410E7702772749A003FB52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8410E79927731902003FB52F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		84E69C69277626E100E4807E /* QuoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteScreen.swift; sourceTree = "<group>"; };
+		910A959487BD49D92AD22A6C /* Pods-Movie Quotes Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Quotes Assignment.release.xcconfig"; path = "Target Support Files/Pods-Movie Quotes Assignment/Pods-Movie Quotes Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		AB48CABAF4AA6A94EF1AF46F /* Pods_Movie_Quotes_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Quotes_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD5F1BBBBDA1FF0C79033F1 /* Pods-Movie Quotes Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Quotes Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Movie Quotes Assignment/Pods-Movie Quotes Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E69C682776206000E4807E /* Kingfisher in Frameworks */,
+				A02EEBA8E8B5712D87C6BB0E /* Pods_Movie_Quotes_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				8410E75E27727499003FB52F /* Movie Quotes Assignment */,
 				8410E75D27727499003FB52F /* Products */,
+				F54DC3D29C642DD9BA47454A /* Pods */,
+				C832AE76A162200796700007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +79,27 @@
 				8410E76D2772749A003FB52F /* LaunchScreen.storyboard */,
 				8410E7702772749A003FB52F /* Info.plist */,
 				8410E76827727499003FB52F /* Movie_Quotes_Assignment.xcdatamodeld */,
+				8410E79927731902003FB52F /* CollectionViewCell.swift */,
+				84E69C69277626E100E4807E /* QuoteScreen.swift */,
 			);
 			path = "Movie Quotes Assignment";
+			sourceTree = "<group>";
+		};
+		C832AE76A162200796700007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB48CABAF4AA6A94EF1AF46F /* Pods_Movie_Quotes_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F54DC3D29C642DD9BA47454A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDD5F1BBBBDA1FF0C79033F1 /* Pods-Movie Quotes Assignment.debug.xcconfig */,
+				910A959487BD49D92AD22A6C /* Pods-Movie Quotes Assignment.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +109,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8410E7732772749A003FB52F /* Build configuration list for PBXNativeTarget "Movie Quotes Assignment" */;
 			buildPhases = (
+				0D2819BCBDAC0E28C245B39C /* [CP] Check Pods Manifest.lock */,
 				8410E75827727499003FB52F /* Sources */,
 				8410E75927727499003FB52F /* Frameworks */,
 				8410E75A27727499003FB52F /* Resources */,
+				951741F146DDCBEE15402B54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Movie Quotes Assignment";
+			packageProductDependencies = (
+				84E69C672776206000E4807E /* Kingfisher */,
+			);
 			productName = "Movie Quotes Assignment";
 			productReference = 8410E75C27727499003FB52F /* Movie Quotes Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 8410E75327727499003FB52F;
+			packageReferences = (
+				84E69C662776206000E4807E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8410E75D27727499003FB52F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,11 +176,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D2819BCBDAC0E28C245B39C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movie Quotes Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		951741F146DDCBEE15402B54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movie Quotes Assignment/Pods-Movie Quotes Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movie Quotes Assignment/Pods-Movie Quotes Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Movie Quotes Assignment/Pods-Movie Quotes Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8410E75827727499003FB52F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E69C6A277626E100E4807E /* QuoteScreen.swift in Sources */,
+				8410E79A27731902003FB52F /* CollectionViewCell.swift in Sources */,
 				8410E76A27727499003FB52F /* Movie_Quotes_Assignment.xcdatamodeld in Sources */,
 				8410E76427727499003FB52F /* ViewController.swift in Sources */,
 				8410E76027727499003FB52F /* AppDelegate.swift in Sources */,
@@ -288,6 +372,7 @@
 		};
 		8410E7742772749A003FB52F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD5F1BBBBDA1FF0C79033F1 /* Pods-Movie Quotes Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +401,7 @@
 		};
 		8410E7752772749A003FB52F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910A959487BD49D92AD22A6C /* Pods-Movie Quotes Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -364,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84E69C662776206000E4807E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84E69C672776206000E4807E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84E69C662776206000E4807E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8410E76827727499003FB52F /* Movie_Quotes_Assignment.xcdatamodeld */ = {
